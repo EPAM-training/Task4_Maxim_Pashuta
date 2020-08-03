@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPAM_Task4", "EPAM_Task4\EPAM_Task4.csproj", "{26AB0AD8-2EAB-4F7B-861C-BAD2267E46D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPAM_Task4_NUnitTest", "EPAM_Task4_NUnitTest\EPAM_Task4_NUnitTest.csproj", "{DDAFC716-0A53-479E-BCF1-3E3410C4B515}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26AB0AD8-2EAB-4F7B-861C-BAD2267E46D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AB0AD8-2EAB-4F7B-861C-BAD2267E46D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AB0AD8-2EAB-4F7B-861C-BAD2267E46D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AB0AD8-2EAB-4F7B-861C-BAD2267E46D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDAFC716-0A53-479E-BCF1-3E3410C4B515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAFC716-0A53-479E-BCF1-3E3410C4B515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAFC716-0A53-479E-BCF1-3E3410C4B515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAFC716-0A53-479E-BCF1-3E3410C4B515}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {785807F3-4E5C-467F-807A-3181721611F8}
+	EndGlobalSection
+EndGlobal
