@@ -43,7 +43,10 @@ namespace EPAM_Task4_NUnitTest.ClientModesTest
                 _client
             };
 
-            ((Server)networkElements[0]).AddedMessageToClient += messageStore.AddMessageToClient;
+            ((Server)networkElements[0]).AddedMessageToClient += (string message, Client client) =>
+            {
+                messageStore.AddMessageToClient(message, client);
+            };
 
             _client.SendMessage(ipAddress, mask, actualResult, networkElements);
 
@@ -74,7 +77,10 @@ namespace EPAM_Task4_NUnitTest.ClientModesTest
                 _client
             };
 
-            ((Server)networkElements[0]).AddedMessageToClient += messageStore.AddMessageToClient;
+            ((Server)networkElements[0]).AddedMessageToClient += (string message, Client client) =>
+            {
+                messageStore.AddMessageToClient(message, client);
+            };
 
             Assert.That(() => _client.SendMessage(ipAddress, mask, message, networkElements), Throws.ArgumentException.With.Message.EqualTo(exceptionMessage));
         }

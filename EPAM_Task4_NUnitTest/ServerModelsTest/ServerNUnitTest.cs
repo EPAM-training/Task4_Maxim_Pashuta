@@ -43,7 +43,10 @@ namespace EPAM_Task4_NUnitTest.ServerModelsTest
                 _server
             };
 
-            ((Client)networkElements[0]).TranslatedMessage += Translator.TranslateMessage;
+            ((Client)networkElements[0]).TranslatedMessage += (string message) =>
+            {
+                return Translator.TranslateMessage(message);
+            };
 
             string result = _server.SendMessage(ipAddress, mask, message, networkElements);
 
@@ -70,7 +73,10 @@ namespace EPAM_Task4_NUnitTest.ServerModelsTest
                 _server
             };
 
-            ((Client)networkElements[0]).TranslatedMessage += Translator.TranslateMessage;
+            ((Client)networkElements[0]).TranslatedMessage += (string message) =>
+            {
+                return Translator.TranslateMessage(message);
+            };
 
             Assert.That(() => _server.SendMessage(ipAddress, mask, message, networkElements), Throws.ArgumentException.With.Message.EqualTo(exceptionMessage));
         }
